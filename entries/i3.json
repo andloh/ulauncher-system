@@ -18,14 +18,14 @@
         "description": "Suspend to memory.",
         "icon": "system-suspend",
         "aliases": ["suspend", "sleep"],
-        "command": "xlock -b; system-suspend"
+        "command": "xlock -b && system-suspend"
     },
     "hibernate": {
         "name": "Hibernate",
         "description": "Suspend to disk.",
         "icon": "system-suspend-hibernate",
         "aliases": ["suspend", "hibernate"],
-        "command": "xlock -b; system-hibernate"
+        "command": "xlock -b && system-hibernate"
     },
     "restart": {
         "name": "Restart",
