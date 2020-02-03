@@ -18,27 +18,27 @@
         "description": "Suspend to memory.",
         "icon": "system-suspend",
         "aliases": ["suspend", "sleep"],
-        "command": "xlock -b; systemctl-syspend"
+        "command": "xlock -b; system-suspend"
     },
     "hibernate": {
         "name": "Hibernate",
         "description": "Suspend to disk.",
         "icon": "system-suspend-hibernate",
         "aliases": ["suspend", "hibernate"],
-        "command": "xlock -b; systemctl-hibernate"
+        "command": "xlock -b; system-hibernate"
     },
     "restart": {
         "name": "Restart",
         "description": "Restart the machine.",
         "icon": "system-reboot",
         "aliases": ["restart", "reboot"],
-        "command": "/usr/local/bin/systemctl-reboot"
+        "command": "system-reboot"
     },
     "shutdown": {
         "name": "Shut down",
         "description": "Shut down the machine.",
         "icon": "system-shutdown",
         "aliases": ["shut down", "shutdown", "poweroff", "halt"],
-        "command": "/usr/local/bin/systemctl-shutdown"
+        "command": "system-shutdown"
     }
 }
