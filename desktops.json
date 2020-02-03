@@ -21,5 +21,9 @@
     },
     "sway": {
         "env": "SWAYSOCK"
+    },
+    "i3": {
+        "env": "XDG_CURRENT_DESKTOP",
+        "aliases": ["i3"]
     }
 }
