@@ -4,7 +4,7 @@
         "description": "Lock the session.",
         "icon": "system-lock-screen",
         "aliases": ["lock"],
-        "command": "xlock"
+        "command": "/usr/bin/i3lock-fancy -p"
     },
     "log-out": {
         "name": "Log out",
@@ -18,27 +18,27 @@
         "description": "Suspend to memory.",
         "icon": "system-suspend",
         "aliases": ["suspend", "sleep"],
-        "command": "xlock -b && system-suspend"
+        "command": "systemctl suspend -i"
     },
     "hibernate": {
         "name": "Hibernate",
         "description": "Suspend to disk.",
         "icon": "system-suspend-hibernate",
         "aliases": ["suspend", "hibernate"],
-        "command": "xlock -b && system-hibernate"
+        "command": "systemctl hibernate -i"
     },
     "restart": {
         "name": "Restart",
         "description": "Restart the machine.",
         "icon": "system-reboot",
         "aliases": ["restart", "reboot"],
-        "command": "system-reboot"
+        "command": "systemctl reboot -i"
     },
     "shutdown": {
         "name": "Shut down",
         "description": "Shut down the machine.",
         "icon": "system-shutdown",
         "aliases": ["shut down", "shutdown", "poweroff", "halt"],
-        "command": "system-shutdown"
+        "command": "shutdown -h"
     }
 }
