@@ -39,6 +39,6 @@
         "description": "Shut down the machine.",
         "icon": "system-shutdown",
         "aliases": ["shut down", "shutdown", "poweroff", "halt"],
-        "command": "shutdown -h no now"
+        "command": "shutdown -h now"
     }
 }
